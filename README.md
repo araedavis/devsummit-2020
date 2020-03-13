@@ -1,6 +1,6 @@
-# devsummit-2020
+# Custom Basemaps with Vector Tile Style Editor
 
-Esri DevSummit 2020 Talks
+Esri DevSummit 2020 
 
 To run slides:
 ```bash
