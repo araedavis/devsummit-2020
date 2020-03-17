@@ -198,44 +198,43 @@
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-						<!-- Allison -->
-						## Quick Editor
+          <!-- Allison -->
+          ## Quick Editor
 
-						* Fast, bulk styling for Esri and OSM basemaps
-						* 6 color groups
-						* ~500-1000 styling rules
-						* Label and road size editing
-					</textarea>
+          * Fast, bulk styling for Esri and OSM basemaps
+          * 6 color groups
+          * ~500-1000 styling rules
+          * Label and road size editing
+            
+          <aside class="notes" data-markdown>
+            * Allows you to edit large categories in Bulk
+            * groups: (land, water, roads, boundaries, buildings)
+            * Depending on the complexity of the style and the number of layers there can be anywhere from 500 to over 100 rules
+          
+            * Continue demo in AGOL (world nav)
+            * Demo Color theming
+            * Demo randomize
+            * Show color palette tools
+            * Show sprite recoloring
+            * Font replace
+            * Label size
+            * Road size
+          </aside>
+			</textarea>
 
-        [Demo](https://developers.arcgis.com/vector-tile-style-editor)
 
-        <aside class="notes`" data-markdown>
-          * Allows you to edit large categories in Bulk
-          * groups: (land, water, roads, boundaries, buildings)
-          * Depending on the complexity of the style and the number of layers there can be anywhere from 500 to over 100 rules
-
-          * Continue demo in AGOL (world nav)
-          * Demo Color theming 
-          * Demo randomize
-          * Show color palette tools
-          * Show sprite recoloring 
-          * Font replace
-          * Label size 
-          * Road size
-        </aside>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-						<!-- Allison -->
-						## Inside Quick Editor
+          <!-- Allison -->
+          ## Inside Quick Editor
 
-						1. 6 color groups 
-						2. Style rules run
-						3. Labels colored to meet contrast threshold
-						4. Shadows and road casings colored for contrast
-						5. Icons and patterns are tinted to match color groups
-          </textarea>
+          1. 6 color groups 
+          2. Style rules run
+          3. Labels colored to meet contrast threshold
+          4. Shadows and road casings colored for contrast
+          5. Icons and patterns are tinted to match color groups
           
           <aside class="notes" data-markdown>
             * The internals of Quick Editor
@@ -246,86 +245,87 @@
             * Shadows and road casings colored for contrast
             * Last, if selected, icons and patterns are tinted to match the color groups
           </aside>
+        </textarea>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-						<!-- Allison -->
-						## Group Editor
+          <!-- Allison -->
+          ## Group Editor
 
-						* Bulk edit 1 category of layers
-						* Same rules as quick editor
-						* Great for categories like `Roads > Major` and `1Roads > Minor`
-						* Edit a large number of layers fast
-					</textarea>
-
-        <aside class="notes`" data-markdown>
-          (Slide first, then demo)
-          * Zoom to Portland OR (Zoom level 12)
-          * Style minor road group (color, label color, label size)
-        </aside>
+          * Bulk edit 1 category of layers
+          * Same rules as quick editor
+          * Great for big categories like major or minor roads
+          * Edit a large number of layers fast
+        
+          <aside class="notes" data-markdown>
+            (Slide first, then demo)
+            * Zoom to Portland OR (Zoom level 12)
+            * Style minor road group (color, label color, label size)
+          </aside>
+        </textarea>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-						<!-- Allison -->
-						## Layer Editor
+          <!-- Allison -->
+          ## Layer Editor
 
-						* Edit any propery of any layer
-						* Verbose, but detailed editing
-						* Use steps for different style across zoom levels
-						* Show/hide layers
-						* Customize zoom levels
-						* High level of control
-					</textarea>
-
-        <aside class="notes`" data-markdown>
-          (Slides first, then demo)
-          * Click on forest park 
-          * Adjust visible zoom range
-          * Demo setting color stops for fill color
-          * Demo opacity 
-        </aside>
+          * Edit any propery of any layer
+          * Verbose, but detailed editing
+          * Use stops for different style across zoom levels
+          * Show/hide layers
+          * Customize zoom levels
+          * High level of control
+          
+          <aside class="notes" data-markdown>
+            (Slides first, then demo)
+            * Click on forest park
+            * Adjust visible zoom range
+            * Demo setting color stops for fill color
+            * Demo opacity
+          </aside>
+				</textarea>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-        <!-- Allison -->
-        ## Sprite Editor
+          <!-- Allison -->
+          ## Sprite Editor
 
-        - Recolors icons and patterns
-        - Upload new sprites
-        - Delete sprites
+          - Recolors icons and patterns
+          - Upload new sprites
+          - Delete sprites
+
+          <aside class="notes" data-markdown>
+            (slides first, then demo)
+            Continue with Forest Park
+            * Add new sprite for park pattern, switch to layer editor to apply pattern
+            * Add new sprite for label icon, retint
+            * Switch to layer editor and demo offset
+          </aside>
 				</textarea>
 
-        <aside class="notes" data-markdown>
-          (slides first, then demo)
-          Continue with Forest Park 
-          * Add new sprite for park pattern, switch to layer editor to apply pattern
-          * Add new sprite for label icon, retint
-          * Switch to layer editor and demo offset
 
-
-        </aside>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
         <textarea data-template>
-						<!-- Allison -->
-						## Color Editor
+          <!-- Allison -->
+          ## Color Editor
 
-						* Find and replace colors in a style
-						* Great for auditing a map to identify out of place colors
-					</textarea>
-
-        <aside class="notes`" data-markdown>
-          * Demo - click Education layer, make it a strange color
-          * Zoom out to level in which layer isn't visible 
-          * Suppose I've lost track of this change, 
-          * Go to color editor, demo finding and fixing
-
-          * Transition back to slides and then to Patrick
-        </aside>
+          * Find and replace colors in a style
+          * Great for auditing a map to identify out of place colors
+          
+          <aside class="notes" data-markdown>
+            * Demo - click Education layer, make it a strange color
+            * Zoom out to level in which layer isn't visible
+            * Suppose I've lost track of this change,
+            * Go to color editor, demo finding and fixing
+          
+            * Transition back to slides and then to Patrick
+          </aside>
+			  </textarea>
       </section>
 
       <section data-markdown data-background="./template/img/2020/devsummit/bg-2.png">
